@@ -6,7 +6,7 @@ const Navbar = () =>{
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections =["home", "about", "projects", "experience"];
+            const sections =["home", "about", "experience", "projects"];
             let currentSection = "";
 
             sections.forEach((section) => {
@@ -27,11 +27,11 @@ const Navbar = () =>{
     }, []);
 
     return(
-        <div className="w-full bg-red-500 sticky top-0 p-2 z-10 bg-opacity-70">
-            <ul className="flex flex-row  justify-center sm:justify-end text-white gap-8 pr-6 text-2xl">
-                {["home", "about", "projects", "experience"].map((section) => (
+        <div className="w-full bg-red-500 sticky top-0 p-4 z-10 bg-opacity-70 shadow-2xl">
+            <ul className="flex flex-row  justify-center sm:justify-end text-white gap-8 pr-6 text-xl">
+                {["home", "about", "experience", "projects"].map((section) => (
                     <li key={section}>
-                        <a href={`#${section}`} className={activeSection === section ? "text-blue-300" : ":text-white"}> {section.charAt(0).toUpperCase() + section.slice(1)} </a>
+                        <a href={`#${section}`} className={activeSection === section ? "font-bold underline underline-offset-4" : ":text-white hover:opacity-70"}> {section.charAt(0).toUpperCase() + section.slice(1)} </a>
                     </li>
                 ))}
             </ul>

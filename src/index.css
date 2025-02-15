@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root{
-  background-color: #212227;
+  background-color: #212227; /* may change back to this*/
+  background-color: #1a1a1a;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /*  [Default CSS]

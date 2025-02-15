@@ -1,3 +1,5 @@
+// #ffffff -white
+
 import { useEffect } from "react";
 
 const ParticlesBackground = () => {
@@ -7,15 +9,15 @@ const ParticlesBackground = () => {
       window.particlesJS("particles-container", {
         particles: {
           number: { value: 100, density: { enable: true, value_area: 800 } },
-          color: { value: "#ffffff" },
+          color: { value: "#ffffff"},
           shape: { type: "circle" },
           opacity: { value: 0.5, random: true },
           size: { value: 3, random: true },
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
+            color: "#FF0000",
+            opacity: 0.35,
             width: 1,
           },
           move: { enable: true, speed: 2, out_mode: "out" },
@@ -34,7 +36,7 @@ const ParticlesBackground = () => {
   return (
     <div
       id="particles-container"
-      className="absolute top-0 left-0 w-full h-full bg-inherit -z-1"
+      className="fixed top-0 left-0 w-full h-full bg-inherit -z-1" // changed "fixed" to "absolute" to make it only for home page
     ></div>
   );
 };
