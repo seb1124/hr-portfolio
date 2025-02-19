@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://seb1124.github.io/hr-portfolio",
+  "homepage": "https://seb1124.github.io/hr-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
