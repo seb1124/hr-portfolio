@@ -1,3 +1,5 @@
+// unused component
+
 import { useState, useEffect } from "react";
 
 const Navbar = () =>{
@@ -27,7 +29,7 @@ const Navbar = () =>{
     }, []);
 
     return(
-        <div className="w-full bg-red-500 sticky top-0 p-4 z-10 bg-opacity-70 shadow-2xl">
+        <div className="w-full bg-red-600 sticky top-0 p-4 z-10 bg-opacity-30 shadow-2xl">
             <ul className="flex flex-row  justify-center sm:justify-end text-white gap-8 pr-6 text-xl">
                 {["home", "about", "experience", "projects"].map((section) => (
                     <li key={section}>

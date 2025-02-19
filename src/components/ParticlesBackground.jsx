@@ -8,7 +8,7 @@ const ParticlesBackground = () => {
     if (window.particlesJS) {
       window.particlesJS("particles-container", {
         particles: {
-          number: { value: 100, density: { enable: true, value_area: 800 } },
+          number: { value: 100, density: { enable: true, value_area: 1600 } },
           color: { value: "#ffffff"},
           shape: { type: "circle" },
           opacity: { value: 0.5, random: true },
@@ -16,11 +16,11 @@ const ParticlesBackground = () => {
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#FF0000",
-            opacity: 0.35,
+            color: "#ffffff",
+            opacity: 0.25,
             width: 1,
           },
-          move: { enable: true, speed: 2, out_mode: "out" },
+          move: { enable: true, speed: .5, out_mode: "out" },
         },
         interactivity: {
           events: {
@@ -36,7 +36,7 @@ const ParticlesBackground = () => {
   return (
     <div
       id="particles-container"
-      className="fixed top-0 left-0 w-full h-full bg-inherit -z-1" // changed "fixed" to "absolute" to make it only for home page
+      className="fixed top-0 left-0 w-full h-full bg-inherit -z-10" // changed "fixed" to "absolute" to make it only for home page
     ></div>
   );
 };

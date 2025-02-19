@@ -1,3 +1,5 @@
+// unused page
+
 // Language Icon Imports
 import { FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
@@ -27,9 +29,6 @@ import { SiMongodb } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FaUnity } from "react-icons/fa";
 import { SiAnaconda } from "react-icons/si";
-
-
-
 
 
 const AboutPage = () =>{
@@ -75,7 +74,7 @@ const AboutPage = () =>{
             
             <div className="min-h-screen">
                 
-                <h1 className="text-white text-6xl underline underline-offset-8  font-bold decoration-red-500 decoration-8 text-center">About</h1>
+                <h1 className="text-white text-6xl underline underline-offset-8 font-bold decoration-red-500 decoration-8 text-center">About</h1>
                 
                 <div className="flex flex-col  justify-center items-center pt-16 mt-16 gap-8 w-full">
                     

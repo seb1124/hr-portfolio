@@ -1,3 +1,6 @@
+// unused page
+
+
 import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 //import ParticlesBackground from "../components/ParticlesBackground";
