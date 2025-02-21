@@ -27,11 +27,13 @@ import { SiAnaconda } from "react-icons/si";
 //projects
 import studyflash from "../assets/studyflash.png"
 
+//to-do: fix responsiveness of text for project cards (adjusting width for different screen dimensions), margins small screens      second div previously ml-8 mr-8 with no "sm:"; project div previously w-72 no "sm:"
+
 
 const PortfolioPage = () => {
     return(
         <div className="flex justify-center items-start h-screen pt-12 z-100">
-            <div className="w-full ml-8 mr-8 xl:ml-0 xl:mr-0 xl:w-2/3 2xl:w-1/3 flex justify-center flex-col gap-12">
+            <div className="w-full ml-12 mr-12 sm:ml-8 sm:mr-8 xl:ml-0 xl:mr-0 xl:w-2/3 2xl:w-1/3 flex justify-center flex-col gap-12">
 
 
 
@@ -138,7 +140,7 @@ const PortfolioPage = () => {
                                 <div className="overflow-hidden w-32 h-32 rounded-md">
                                     <img src={studyflash} alt="Description" className="w-full h-full object-cover"/>
                                 </div>
-                                <div className="flex flex-col gap-4 w-72">
+                                <div className="flex flex-col gap-4 w-36 sm:w-72">
                                     <h3 className="text-2xl font-semibold"> StudyFlash </h3>
                                     <p className="text-sm"> a web application created for the KnightHacks VII hackathon that leverages AI to generate flashcards for study materials uploaded by users.</p>
                                     <p className="text-xs text-gray-300"> HTML, CSS, JavaScript, PHP, OpenAI API</p>
